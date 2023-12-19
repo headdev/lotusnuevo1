@@ -4,3 +4,10 @@ node_modules
 .next
 /.next
 next
+out
+/.out
+dist
+pacakge-lock.json
+.env
+.env.local
+.env.development.local
