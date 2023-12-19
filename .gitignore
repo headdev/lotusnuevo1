@@ -13,3 +13,5 @@ pacakge-lock.json
 .env.development.local
 ._*
 **/_.*
+.__*
+**/.__*
