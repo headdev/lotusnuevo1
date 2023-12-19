@@ -5,6 +5,7 @@ export default function Pagination({
     next,
     pages,
     handleActive,
+    
 }) {
     return (
         <>
