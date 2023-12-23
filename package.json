@@ -11,6 +11,7 @@
         "sass": "sass --watch public/app/scss/app.scss:public/app/dist/app.css"
     },
     "dependencies": {
+        "aws-sdk": "^2.1525.0",
         "chart.js": "^4.4.0",
         "eslint": "8.41.0",
         "eslint-config-next": "13.4.3",
