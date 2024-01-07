@@ -12,15 +12,9 @@ export default function Menu() {
                 <Link className={router.pathname == "/index-2" ? "active" : ""}>Home Interior</Link>
             </ul> */}
             <ul className="navigation clearfix">
-                <li className="dropdown2"><Link href="#">Home</Link>
-                    <ul>
-                        <li  className={router.pathname == "/" ? "current" : ""}><Link href="/">Home Page 01</Link></li>
-                        <li className={router.pathname == "/home02" ? "current" : ""}><Link href="/home02">Home Page 02</Link></li>
-                        <li className={router.pathname == "/home03" ? "current" : ""}><Link href="/home03">Home Page 03</Link></li>
-                        <li className={router.pathname == "/home04" ? "current" : ""}><Link href="/home04">Home Page 04</Link></li>
-                        <li className={router.pathname == "/home05" ? "current" : ""}><Link href="/home05">Home Page 05</Link></li>
-                    </ul>
-                </li>
+            <li className={router.pathname == "/Lotushome" ? "current" : ""}><Link href="/Lotushome">LotusHome</Link></li>
+                    
+            
                 <li className="dropdown2"><Link href="#">Property</Link>
                     <ul>
                         <li className="dropdown2"><Link href="#">Property List</Link>

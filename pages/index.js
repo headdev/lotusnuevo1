@@ -12,10 +12,9 @@ import FlatSale4 from "@/components/sections/FlatSale4"
 import FlatSearchToday4 from "@/components/sections/FlatSearchToday4"
 import FlatWhyChoose4 from "@/components/sections/FlatWhyChoose4"
 import Slider4 from "@/components/sections/Slider4"
-export default function Home4() {
+export default function LotusHome() {
 
 
-mongose.connect(process.env.MONGO_URI, {    useNewUrlParser: true,    useUnifiedTopology: true,    useFindAndModify: false,    useCreateIndex: true,  }).then(() => {    console.log("Connected to MongoDB")  }).catch((err) => {    console.log("Error connecting to MongoDB", err.message)  })
     return (
         <>
 
