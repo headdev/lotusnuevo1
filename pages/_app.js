@@ -11,6 +11,11 @@ import "/public/app/dist/font-awesome.css";
 import AddClassBody from "@/components/elements/AddClassBody";
 import "/public/app/dist/responsive.css";
 
+import { Amplify } from 'aws-amplify';
+import config from './aws-exports.js';
+
+Amplify.configure(config);
+
 function MyApp({ Component, pageProps }) {
 
     const [loading, setLoading] = useState(true)

@@ -1,0 +1,15 @@
+projects:
+  LotusrevenueAPi:
+    schemaPath: src/graphql/schema.json
+    includes:
+      - src/graphql/**/*.js
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: javascript
+        generatedFileName: ''
+        docsFilePath: src/graphql
+        region: us-west-1
+        apiId: mmfpeqcw5valtljayf4ztuw3ju
+        maxDepth: 10
