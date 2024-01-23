@@ -153,6 +153,7 @@ type EagerAgentes = {
   readonly identificacion?: Tipoid | null;
   readonly Propiedads?: (Propiedad | null)[] | null;
   readonly Compradors?: (Comprador | null)[] | null;
+  readonly password?: string | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
@@ -170,6 +171,7 @@ type LazyAgentes = {
   readonly identificacion?: Tipoid | null;
   readonly Propiedads: AsyncCollection<Propiedad>;
   readonly Compradors: AsyncCollection<Comprador>;
+  readonly password?: string | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
@@ -248,6 +250,7 @@ type EagerComprador = {
   readonly agentesID: string;
   readonly Vendedor?: Agentes | null;
   readonly apartaments?: (ApartamentComprador | null)[] | null;
+  readonly password: string;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
   readonly compradorPropiedadId?: string | null;
@@ -271,6 +274,7 @@ type LazyComprador = {
   readonly agentesID: string;
   readonly Vendedor: AsyncItem<Agentes | undefined>;
   readonly apartaments: AsyncCollection<ApartamentComprador>;
+  readonly password: string;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
   readonly compradorPropiedadId?: string | null;

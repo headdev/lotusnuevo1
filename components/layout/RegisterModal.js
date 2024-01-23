@@ -3,12 +3,12 @@ export default function RegisterModal({ isRegister, handleRegister }) {
     return (
         <>
             <div className={`modal fade popup ${isRegister ? "show d-block" : ""}`} id="popup_bid2" tabIndex={-1} role="dialog" aria-hidden="true">
-                <div className="modal-dialog modal-dialog-centered" role="document">
-                    <div className="modal-content ">
+                <div className="modal-dialog modal-dialog-centered h-3/4 overflow-y-auto" role="document">
+                    <div className="modal-content overflow-y-auto max-h-full ">
                         <button type="button" className="close" data-dismiss="modal" aria-label="Close" onClick={handleRegister}>
                             <span aria-hidden="true">×</span>
                         </button>
-                        <div className="modal-body space-y-20 pd-40 style2">
+                        <div className="modal-body space-y-20 pd-40 style2 ">
                             <div className="wrap-modal flex">
                                 <div className="images flex-none relative">
                                     <img src="assets/images/section/bg-register.jpg" alt="images" />
@@ -16,14 +16,19 @@ export default function RegisterModal({ isRegister, handleRegister }) {
                                         <img src="assets/images/logo/logo2.png" alt="images" />
                                     </div>
                                 </div>
-                                <div className="content">
-                                    <div className="title-login fs-30 fw-7 lh-45">Register</div>
+                                <div className="content" >
+                                    <div className="title-login fs-30 fw-7 lh-45 flex justify-center items-center">Registrar Usuario</div>
                                     <div className="comments">
                                         <div className="respond-comment">
                                             <form method="post" className="comment-form form-submit" action="#" acceptCharset="utf-8" noValidate="novalidate">
                                                 <fieldset className>
-                                                    <label className="fw-6">User name</label>
-                                                    <input type="text" className="tb-my-input" name="text" placeholder="User name" />
+                                                    <label className="fw-6">Nombre completo</label>
+                                                    <input type="text" className="tb-my-input" name="text" placeholder="Nombre y apellido" />
+                                                    <img className="img-icon img-name" src="assets/images/icon/login-user.svg" alt="images" />
+                                                </fieldset>
+                                                <fieldset className>
+                                                    <label className="fw-6">Nombre de usuario</label>
+                                                    <input type="text" className="tb-my-input" name="text" placeholder="Nombre de usuario" />
                                                     <img className="img-icon img-name" src="assets/images/icon/login-user.svg" alt="images" />
                                                 </fieldset>
                                                 <fieldset className="t">
@@ -32,12 +37,12 @@ export default function RegisterModal({ isRegister, handleRegister }) {
                                                     <img className="img-icon" src="assets/images/icon/icon-gmail.svg" alt="images" />
                                                 </fieldset>
                                                 <fieldset className>
-                                                    <label className="fw-6">Password</label>
+                                                    <label className="fw-6">Contraseña</label>
                                                     <input type="password" className="input-form password-input" placeholder="Your password" />
                                                     <img className="img-icon" src="assets/images/icon/icon-password.svg" alt="images" />
                                                 </fieldset>
                                                 <fieldset className>
-                                                    <label className="fw-6">Confirm password</label>
+                                                    <label className="fw-6">Confirmar contraseña</label>
                                                     <input type="password" className="input-form password-input" placeholder="Confirm password" />
                                                     <img className="img-icon" src="assets/images/icon/icon-password.svg" alt="images" />
                                                 </fieldset>

@@ -73,7 +73,9 @@ export default function FlatDiscover4() {
                                             <div className="content">
                                                 <h3 className="link-style-1"><Link href="/property-detail-v1">Gorgeous Apartment Building</Link> </h3>
                                                 <div className="text-address"><p className="p-12">58 Hullbrook Road, Billesley, B13 0LA</p></div>
-                                                <div className="money fs-18 fw-6 text-color-3"><Link href="/property-detail-v1">$7,500</Link></div>
+                                                <div className="grid grid-cols-2 gap-4"> <div className="money fs-18 fw-6 text-color-3"><Link href="/property-detail-v1">$7,500</Link></div></div>
+                                                <div className="money fs-18 fw-6 text-color-3"><Link href="/property-detail-v1">Fracciones : 1.150 </Link></div>
+                                                
                                                 <div className="icon-box flex">
                                                     <div className="icons icon-1 flex"><span>Beds: </span><span className="fw-6">4</span></div>
                                                     <div className="icons icon-2 flex"><span>Baths: </span><span className="fw-6">2</span></div>
@@ -111,10 +113,13 @@ export default function FlatDiscover4() {
                                                 <h3 className="link-style-1"><Link href="/property-detail-v1">Gorgeous Apartment Building</Link> </h3>
                                                 <div className="text-address"><p className="p-12">58 Hullbrook Road, Billesley, B13 0LA</p></div>
                                                 <div className="money fs-18 fw-6 text-color-3"><Link href="/property-detail-v1">$7,500</Link></div>
+                                                <div className="money fs-18 fw-6 text-color-3"><Link href="/property-detail-v1">Fracciones : 1.150  Tokens</Link></div>
                                                 <div className="icon-box flex">
                                                     <div className="icons icon-1 flex"><span>Beds: </span><span className="fw-6">4</span></div>
                                                     <div className="icons icon-2 flex"><span>Baths: </span><span className="fw-6">2</span></div>
                                                     <div className="icons icon-3 flex"><span>Sqft: </span><span className="fw-6">1150</span></div>
+                                                    
+                                                    
                                                 </div>
                                                 <div className="days-box flex justify-space align-center">
                                                     <Link className="compare flex align-center fw-6" href="#">Compare</Link>
@@ -148,6 +153,7 @@ export default function FlatDiscover4() {
                                                 <h3 className="link-style-1"><Link href="/property-detail-v1">Gorgeous Apartment Building</Link> </h3>
                                                 <div className="text-address"><p className="p-12">58 Hullbrook Road, Billesley, B13 0LA</p></div>
                                                 <div className="money fs-18 fw-6 text-color-3"><Link href="/property-detail-v1">$7,500</Link></div>
+                                                <div className="money fs-18 fw-6 text-color-3"><Link href="/property-detail-v1">Fracciones : 1.150 Tokens</Link></div>
                                                 <div className="icon-box flex">
                                                     <div className="icons icon-1 flex"><span>Beds: </span><span className="fw-6">4</span></div>
                                                     <div className="icons icon-2 flex"><span>Baths: </span><span className="fw-6">2</span></div>
@@ -185,6 +191,7 @@ export default function FlatDiscover4() {
                                                 <h3 className="link-style-1"><Link href="/property-detail-v1">Gorgeous Apartment Building</Link> </h3>
                                                 <div className="text-address"><p className="p-12">58 Hullbrook Road, Billesley, B13 0LA</p></div>
                                                 <div className="money fs-18 fw-6 text-color-3"><Link href="/property-detail-v1">$7,500</Link></div>
+                                                <div className="money fs-18 fw-6 text-color-3"><Link href="/property-detail-v1">Fracciones : 1.150  Tokens</Link></div>
                                                 <div className="icon-box flex">
                                                     <div className="icons icon-1 flex"><span>Beds: </span><span className="fw-6">4</span></div>
                                                     <div className="icons icon-2 flex"><span>Baths: </span><span className="fw-6">2</span></div>

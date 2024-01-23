@@ -45,11 +45,11 @@ export default function FlatFindNeighborhood2() {
                                     <SwiperSlide>
                                         <div className="box">
                                             <div className="images">
-                                                <img src="/assets/images/img-box/find-neighborhood-1.jpg" alt="images" />
+                                                <img src="/assets/images/img-box/tulum.jpg" alt="images" />
                                                 <Link href="/properties-map-v1" className="icon-plus"><img src="/assets/images/icon/plus.svg" alt="images" /></Link>
                                             </div>
                                             <div className="content">
-                                                <h3 className="link-style-3"><Link href="/properties-map-v1">Chicago</Link></h3>
+                                                <h3 className="link-style-3"><Link href="/properties-map-v1">Tulum</Link></h3>
                                                 <p className="text-color-1">1570 listing</p>
                                             </div>
                                         </div>
@@ -57,11 +57,11 @@ export default function FlatFindNeighborhood2() {
                                     <SwiperSlide>
                                         <div className="box">
                                             <div className="images">
-                                                <img src="/assets/images/img-box/find-neighborhood-2.jpg" alt="images" />
+                                                <img src="/assets/images/img-box/cancun.jpg" alt="images" />
                                                 <Link href="/properties-map-v1" className="icon-plus"><img src="/assets/images/icon/plus.svg" alt="images" /></Link>
                                             </div>
                                             <div className="content">
-                                                <h3 className="link-style-3"><Link href="/properties-map-v1"> California</Link></h3>
+                                                <h3 className="link-style-3"><Link href="/properties-map-v1"> Cancun</Link></h3>
                                                 <p className="text-color-1">1570 listing</p>
                                             </div>
                                         </div>
@@ -73,7 +73,7 @@ export default function FlatFindNeighborhood2() {
                                                 <Link href="/properties-map-v1" className="icon-plus"><img src="/assets/images/icon/plus.svg" alt="images" /></Link>
                                             </div>
                                             <div className="content">
-                                                <h3 className="link-style-3"><Link href="/properties-map-v1">New York</Link></h3>
+                                                <h3 className="link-style-3"><Link href="/properties-map-v1">Republica Dominicana</Link></h3>
                                                 <p className="text-color-1">1570 listing</p>
                                             </div>
                                         </div>

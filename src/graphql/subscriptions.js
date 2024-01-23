@@ -1,12 +1,9 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createFraccion = /* GraphQL */ `
-  mutation CreateFraccion(
-    $input: CreateFraccionInput!
-    $condition: ModelFraccionConditionInput
-  ) {
-    createFraccion(input: $input, condition: $condition) {
+export const onCreateFraccion = /* GraphQL */ `
+  subscription OnCreateFraccion($filter: ModelSubscriptionFraccionFilterInput) {
+    onCreateFraccion(filter: $filter) {
       id
       Titulo
       Valor
@@ -22,12 +19,9 @@ export const createFraccion = /* GraphQL */ `
     }
   }
 `;
-export const updateFraccion = /* GraphQL */ `
-  mutation UpdateFraccion(
-    $input: UpdateFraccionInput!
-    $condition: ModelFraccionConditionInput
-  ) {
-    updateFraccion(input: $input, condition: $condition) {
+export const onUpdateFraccion = /* GraphQL */ `
+  subscription OnUpdateFraccion($filter: ModelSubscriptionFraccionFilterInput) {
+    onUpdateFraccion(filter: $filter) {
       id
       Titulo
       Valor
@@ -43,12 +37,9 @@ export const updateFraccion = /* GraphQL */ `
     }
   }
 `;
-export const deleteFraccion = /* GraphQL */ `
-  mutation DeleteFraccion(
-    $input: DeleteFraccionInput!
-    $condition: ModelFraccionConditionInput
-  ) {
-    deleteFraccion(input: $input, condition: $condition) {
+export const onDeleteFraccion = /* GraphQL */ `
+  subscription OnDeleteFraccion($filter: ModelSubscriptionFraccionFilterInput) {
+    onDeleteFraccion(filter: $filter) {
       id
       Titulo
       Valor
@@ -64,12 +55,11 @@ export const deleteFraccion = /* GraphQL */ `
     }
   }
 `;
-export const createApartament = /* GraphQL */ `
-  mutation CreateApartament(
-    $input: CreateApartamentInput!
-    $condition: ModelApartamentConditionInput
+export const onCreateApartament = /* GraphQL */ `
+  subscription OnCreateApartament(
+    $filter: ModelSubscriptionApartamentFilterInput
   ) {
-    createApartament(input: $input, condition: $condition) {
+    onCreateApartament(filter: $filter) {
       id
       Propiedads {
         nextToken
@@ -112,12 +102,11 @@ export const createApartament = /* GraphQL */ `
     }
   }
 `;
-export const updateApartament = /* GraphQL */ `
-  mutation UpdateApartament(
-    $input: UpdateApartamentInput!
-    $condition: ModelApartamentConditionInput
+export const onUpdateApartament = /* GraphQL */ `
+  subscription OnUpdateApartament(
+    $filter: ModelSubscriptionApartamentFilterInput
   ) {
-    updateApartament(input: $input, condition: $condition) {
+    onUpdateApartament(filter: $filter) {
       id
       Propiedads {
         nextToken
@@ -160,12 +149,11 @@ export const updateApartament = /* GraphQL */ `
     }
   }
 `;
-export const deleteApartament = /* GraphQL */ `
-  mutation DeleteApartament(
-    $input: DeleteApartamentInput!
-    $condition: ModelApartamentConditionInput
+export const onDeleteApartament = /* GraphQL */ `
+  subscription OnDeleteApartament(
+    $filter: ModelSubscriptionApartamentFilterInput
   ) {
-    deleteApartament(input: $input, condition: $condition) {
+    onDeleteApartament(filter: $filter) {
       id
       Propiedads {
         nextToken
@@ -208,12 +196,9 @@ export const deleteApartament = /* GraphQL */ `
     }
   }
 `;
-export const createTorre = /* GraphQL */ `
-  mutation CreateTorre(
-    $input: CreateTorreInput!
-    $condition: ModelTorreConditionInput
-  ) {
-    createTorre(input: $input, condition: $condition) {
+export const onCreateTorre = /* GraphQL */ `
+  subscription OnCreateTorre($filter: ModelSubscriptionTorreFilterInput) {
+    onCreateTorre(filter: $filter) {
       id
       Apartament {
         id
@@ -266,12 +251,9 @@ export const createTorre = /* GraphQL */ `
     }
   }
 `;
-export const updateTorre = /* GraphQL */ `
-  mutation UpdateTorre(
-    $input: UpdateTorreInput!
-    $condition: ModelTorreConditionInput
-  ) {
-    updateTorre(input: $input, condition: $condition) {
+export const onUpdateTorre = /* GraphQL */ `
+  subscription OnUpdateTorre($filter: ModelSubscriptionTorreFilterInput) {
+    onUpdateTorre(filter: $filter) {
       id
       Apartament {
         id
@@ -324,12 +306,9 @@ export const updateTorre = /* GraphQL */ `
     }
   }
 `;
-export const deleteTorre = /* GraphQL */ `
-  mutation DeleteTorre(
-    $input: DeleteTorreInput!
-    $condition: ModelTorreConditionInput
-  ) {
-    deleteTorre(input: $input, condition: $condition) {
+export const onDeleteTorre = /* GraphQL */ `
+  subscription OnDeleteTorre($filter: ModelSubscriptionTorreFilterInput) {
+    onDeleteTorre(filter: $filter) {
       id
       Apartament {
         id
@@ -382,12 +361,9 @@ export const deleteTorre = /* GraphQL */ `
     }
   }
 `;
-export const createAgentes = /* GraphQL */ `
-  mutation CreateAgentes(
-    $input: CreateAgentesInput!
-    $condition: ModelAgentesConditionInput
-  ) {
-    createAgentes(input: $input, condition: $condition) {
+export const onCreateAgentes = /* GraphQL */ `
+  subscription OnCreateAgentes($filter: ModelSubscriptionAgentesFilterInput) {
+    onCreateAgentes(filter: $filter) {
       id
       nombre
       email
@@ -419,12 +395,9 @@ export const createAgentes = /* GraphQL */ `
     }
   }
 `;
-export const updateAgentes = /* GraphQL */ `
-  mutation UpdateAgentes(
-    $input: UpdateAgentesInput!
-    $condition: ModelAgentesConditionInput
-  ) {
-    updateAgentes(input: $input, condition: $condition) {
+export const onUpdateAgentes = /* GraphQL */ `
+  subscription OnUpdateAgentes($filter: ModelSubscriptionAgentesFilterInput) {
+    onUpdateAgentes(filter: $filter) {
       id
       nombre
       email
@@ -456,12 +429,9 @@ export const updateAgentes = /* GraphQL */ `
     }
   }
 `;
-export const deleteAgentes = /* GraphQL */ `
-  mutation DeleteAgentes(
-    $input: DeleteAgentesInput!
-    $condition: ModelAgentesConditionInput
-  ) {
-    deleteAgentes(input: $input, condition: $condition) {
+export const onDeleteAgentes = /* GraphQL */ `
+  subscription OnDeleteAgentes($filter: ModelSubscriptionAgentesFilterInput) {
+    onDeleteAgentes(filter: $filter) {
       id
       nombre
       email
@@ -493,12 +463,11 @@ export const deleteAgentes = /* GraphQL */ `
     }
   }
 `;
-export const createPropiedad = /* GraphQL */ `
-  mutation CreatePropiedad(
-    $input: CreatePropiedadInput!
-    $condition: ModelPropiedadConditionInput
+export const onCreatePropiedad = /* GraphQL */ `
+  subscription OnCreatePropiedad(
+    $filter: ModelSubscriptionPropiedadFilterInput
   ) {
-    createPropiedad(input: $input, condition: $condition) {
+    onCreatePropiedad(filter: $filter) {
       id
       untitledfield
       Comprador {
@@ -538,12 +507,11 @@ export const createPropiedad = /* GraphQL */ `
     }
   }
 `;
-export const updatePropiedad = /* GraphQL */ `
-  mutation UpdatePropiedad(
-    $input: UpdatePropiedadInput!
-    $condition: ModelPropiedadConditionInput
+export const onUpdatePropiedad = /* GraphQL */ `
+  subscription OnUpdatePropiedad(
+    $filter: ModelSubscriptionPropiedadFilterInput
   ) {
-    updatePropiedad(input: $input, condition: $condition) {
+    onUpdatePropiedad(filter: $filter) {
       id
       untitledfield
       Comprador {
@@ -583,12 +551,11 @@ export const updatePropiedad = /* GraphQL */ `
     }
   }
 `;
-export const deletePropiedad = /* GraphQL */ `
-  mutation DeletePropiedad(
-    $input: DeletePropiedadInput!
-    $condition: ModelPropiedadConditionInput
+export const onDeletePropiedad = /* GraphQL */ `
+  subscription OnDeletePropiedad(
+    $filter: ModelSubscriptionPropiedadFilterInput
   ) {
-    deletePropiedad(input: $input, condition: $condition) {
+    onDeletePropiedad(filter: $filter) {
       id
       untitledfield
       Comprador {
@@ -628,12 +595,11 @@ export const deletePropiedad = /* GraphQL */ `
     }
   }
 `;
-export const createComprador = /* GraphQL */ `
-  mutation CreateComprador(
-    $input: CreateCompradorInput!
-    $condition: ModelCompradorConditionInput
+export const onCreateComprador = /* GraphQL */ `
+  subscription OnCreateComprador(
+    $filter: ModelSubscriptionCompradorFilterInput
   ) {
-    createComprador(input: $input, condition: $condition) {
+    onCreateComprador(filter: $filter) {
       id
       Nombre
       fotoperfil
@@ -698,12 +664,11 @@ export const createComprador = /* GraphQL */ `
     }
   }
 `;
-export const updateComprador = /* GraphQL */ `
-  mutation UpdateComprador(
-    $input: UpdateCompradorInput!
-    $condition: ModelCompradorConditionInput
+export const onUpdateComprador = /* GraphQL */ `
+  subscription OnUpdateComprador(
+    $filter: ModelSubscriptionCompradorFilterInput
   ) {
-    updateComprador(input: $input, condition: $condition) {
+    onUpdateComprador(filter: $filter) {
       id
       Nombre
       fotoperfil
@@ -768,12 +733,11 @@ export const updateComprador = /* GraphQL */ `
     }
   }
 `;
-export const deleteComprador = /* GraphQL */ `
-  mutation DeleteComprador(
-    $input: DeleteCompradorInput!
-    $condition: ModelCompradorConditionInput
+export const onDeleteComprador = /* GraphQL */ `
+  subscription OnDeleteComprador(
+    $filter: ModelSubscriptionCompradorFilterInput
   ) {
-    deleteComprador(input: $input, condition: $condition) {
+    onDeleteComprador(filter: $filter) {
       id
       Nombre
       fotoperfil
@@ -838,12 +802,11 @@ export const deleteComprador = /* GraphQL */ `
     }
   }
 `;
-export const createApartamentComprador = /* GraphQL */ `
-  mutation CreateApartamentComprador(
-    $input: CreateApartamentCompradorInput!
-    $condition: ModelApartamentCompradorConditionInput
+export const onCreateApartamentComprador = /* GraphQL */ `
+  subscription OnCreateApartamentComprador(
+    $filter: ModelSubscriptionApartamentCompradorFilterInput
   ) {
-    createApartamentComprador(input: $input, condition: $condition) {
+    onCreateApartamentComprador(filter: $filter) {
       id
       apartamentId
       compradorId
@@ -887,12 +850,11 @@ export const createApartamentComprador = /* GraphQL */ `
     }
   }
 `;
-export const updateApartamentComprador = /* GraphQL */ `
-  mutation UpdateApartamentComprador(
-    $input: UpdateApartamentCompradorInput!
-    $condition: ModelApartamentCompradorConditionInput
+export const onUpdateApartamentComprador = /* GraphQL */ `
+  subscription OnUpdateApartamentComprador(
+    $filter: ModelSubscriptionApartamentCompradorFilterInput
   ) {
-    updateApartamentComprador(input: $input, condition: $condition) {
+    onUpdateApartamentComprador(filter: $filter) {
       id
       apartamentId
       compradorId
@@ -936,12 +898,11 @@ export const updateApartamentComprador = /* GraphQL */ `
     }
   }
 `;
-export const deleteApartamentComprador = /* GraphQL */ `
-  mutation DeleteApartamentComprador(
-    $input: DeleteApartamentCompradorInput!
-    $condition: ModelApartamentCompradorConditionInput
+export const onDeleteApartamentComprador = /* GraphQL */ `
+  subscription OnDeleteApartamentComprador(
+    $filter: ModelSubscriptionApartamentCompradorFilterInput
   ) {
-    deleteApartamentComprador(input: $input, condition: $condition) {
+    onDeleteApartamentComprador(filter: $filter) {
       id
       apartamentId
       compradorId
@@ -985,12 +946,11 @@ export const deleteApartamentComprador = /* GraphQL */ `
     }
   }
 `;
-export const createTorreApartament = /* GraphQL */ `
-  mutation CreateTorreApartament(
-    $input: CreateTorreApartamentInput!
-    $condition: ModelTorreApartamentConditionInput
+export const onCreateTorreApartament = /* GraphQL */ `
+  subscription OnCreateTorreApartament(
+    $filter: ModelSubscriptionTorreApartamentFilterInput
   ) {
-    createTorreApartament(input: $input, condition: $condition) {
+    onCreateTorreApartament(filter: $filter) {
       id
       apartamentId
       torreId
@@ -1029,12 +989,11 @@ export const createTorreApartament = /* GraphQL */ `
     }
   }
 `;
-export const updateTorreApartament = /* GraphQL */ `
-  mutation UpdateTorreApartament(
-    $input: UpdateTorreApartamentInput!
-    $condition: ModelTorreApartamentConditionInput
+export const onUpdateTorreApartament = /* GraphQL */ `
+  subscription OnUpdateTorreApartament(
+    $filter: ModelSubscriptionTorreApartamentFilterInput
   ) {
-    updateTorreApartament(input: $input, condition: $condition) {
+    onUpdateTorreApartament(filter: $filter) {
       id
       apartamentId
       torreId
@@ -1073,12 +1032,11 @@ export const updateTorreApartament = /* GraphQL */ `
     }
   }
 `;
-export const deleteTorreApartament = /* GraphQL */ `
-  mutation DeleteTorreApartament(
-    $input: DeleteTorreApartamentInput!
-    $condition: ModelTorreApartamentConditionInput
+export const onDeleteTorreApartament = /* GraphQL */ `
+  subscription OnDeleteTorreApartament(
+    $filter: ModelSubscriptionTorreApartamentFilterInput
   ) {
-    deleteTorreApartament(input: $input, condition: $condition) {
+    onDeleteTorreApartament(filter: $filter) {
       id
       apartamentId
       torreId

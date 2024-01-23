@@ -1,20 +1,22 @@
 import Preloader from "@/components/elements/Preloader";
 import { useEffect, useState } from "react";
-import 'swiper/css';
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+const Amplify = require('aws-amplify').Amplify;
+const config = require('../src/aws-exports');
+Amplify.configure({ ...config, ssr: true });
 
-// import "/public/NiceSelect.css"
+
+
+
+
+import 'swiper/css'; 
+import "swiper/css/navigation"; 
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 import "/public/app/dist/app.css";
 import "/public/app/dist/font-awesome.css";
 // import "/public/app/dist/owl.css"
 import AddClassBody from "@/components/elements/AddClassBody";
 import "/public/app/dist/responsive.css";
-
-import { Amplify } from 'aws-amplify';
-import config from './aws-exports.js';
-
-Amplify.configure(config);
 
 function MyApp({ Component, pageProps }) {
 
@@ -35,8 +37,6 @@ function MyApp({ Component, pageProps }) {
             <Preloader />
         )}
     </>)
-}
+} 
 
 export default MyApp
-
-

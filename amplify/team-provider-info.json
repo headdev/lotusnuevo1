@@ -12,8 +12,21 @@
       "AmplifyAppId": "d29vecen1m6l4h"
     },
     "categories": {
-      "api": {
+      "auth": {
         "lotusrevenueaws": {}
+      },
+      "storage": {
+        "s3lotusrevenueawsstorage1a9e68e5": {}
+      },
+      "api": {
+        "lotusrevenueaws": {},
+        "AdminQueries": {}
+      },
+      "function": {
+        "AdminQueriesf17fa756": {
+          "deploymentBucketName": "amplify-lotusrevenueaws-dev-144606-deployment",
+          "s3Key": "amplify-builds/AdminQueriesf17fa756-6d377a566476656c7158-build.zip"
+        }
       }
     }
   }

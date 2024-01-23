@@ -107,17 +107,7 @@ export default function FlatExplore4() {
                                             </div>
                                         </div>
                                     </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="box center hv-one">
-                                            <div className="images img-style s-one relative">
-                                                <img className="img2" src="/assets/images/img-box/explore-1.jpg" alt="images" />
-                                            </div>
-                                            <div className="content link-style-1">
-                                                <Link href="/properties-map-v1"><h3>Chile</h3></Link>
-                                                <p className="text-color-2">1570 listing</p>
-                                            </div>
-                                        </div>
-                                    </SwiperSlide>
+                                   
                                 </Swiper>
                             </div>
                             <div className="swiper-button-next " />

@@ -444,6 +444,13 @@ export const schema = {
                         ]
                     }
                 },
+                "password": {
+                    "name": "password",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": false,
+                    "attributes": []
+                },
                 "createdAt": {
                     "name": "createdAt",
                     "isArray": false,
@@ -773,6 +780,13 @@ export const schema = {
                         ]
                     }
                 },
+                "password": {
+                    "name": "password",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": true,
+                    "attributes": []
+                },
                 "createdAt": {
                     "name": "createdAt",
                     "isArray": false,
@@ -1065,5 +1079,5 @@ export const schema = {
         }
     },
     "codegenVersion": "3.4.4",
-    "version": "254d17ffafecd1684c719635c631be5b"
+    "version": "9e6a282e516c24843137c1968df8157c"
 };

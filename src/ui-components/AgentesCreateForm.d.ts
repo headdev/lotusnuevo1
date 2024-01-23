@@ -26,12 +26,14 @@ export declare type AgentesCreateFormInputValues = {
     email?: string;
     telefono?: string;
     direccion?: string;
+    password?: string;
 };
 export declare type AgentesCreateFormValidationValues = {
     nombre?: ValidationFunction<string>;
     email?: ValidationFunction<string>;
     telefono?: ValidationFunction<string>;
     direccion?: ValidationFunction<string>;
+    password?: ValidationFunction<string>;
 };
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type AgentesCreateFormOverridesProps = {
@@ -40,6 +42,7 @@ export declare type AgentesCreateFormOverridesProps = {
     email?: PrimitiveOverrideProps<TextFieldProps>;
     telefono?: PrimitiveOverrideProps<TextFieldProps>;
     direccion?: PrimitiveOverrideProps<TextFieldProps>;
+    password?: PrimitiveOverrideProps<TextFieldProps>;
 } & EscapeHatchProps;
 export declare type AgentesCreateFormProps = React.PropsWithChildren<{
     overrides?: AgentesCreateFormOverridesProps | undefined | null;

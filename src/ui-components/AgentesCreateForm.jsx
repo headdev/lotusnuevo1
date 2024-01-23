@@ -26,17 +26,20 @@ export default function AgentesCreateForm(props) {
     email: "",
     telefono: "",
     direccion: "",
+    password: "",
   };
   const [nombre, setNombre] = React.useState(initialValues.nombre);
   const [email, setEmail] = React.useState(initialValues.email);
   const [telefono, setTelefono] = React.useState(initialValues.telefono);
   const [direccion, setDireccion] = React.useState(initialValues.direccion);
+  const [password, setPassword] = React.useState(initialValues.password);
   const [errors, setErrors] = React.useState({});
   const resetStateValues = () => {
     setNombre(initialValues.nombre);
     setEmail(initialValues.email);
     setTelefono(initialValues.telefono);
     setDireccion(initialValues.direccion);
+    setPassword(initialValues.password);
     setErrors({});
   };
   const validations = {
@@ -44,6 +47,7 @@ export default function AgentesCreateForm(props) {
     email: [{ type: "Email" }],
     telefono: [{ type: "Phone" }],
     direccion: [],
+    password: [],
   };
   const runValidationTasks = async (
     fieldName,
@@ -75,6 +79,7 @@ export default function AgentesCreateForm(props) {
           email,
           telefono,
           direccion,
+          password,
         };
         const validationResponses = await Promise.all(
           Object.keys(validations).reduce((promises, fieldName) => {
@@ -133,6 +138,7 @@ export default function AgentesCreateForm(props) {
               email,
               telefono,
               direccion,
+              password,
             };
             const result = onChange(modelFields);
             value = result?.nombre ?? value;
@@ -160,6 +166,7 @@ export default function AgentesCreateForm(props) {
               email: value,
               telefono,
               direccion,
+              password,
             };
             const result = onChange(modelFields);
             value = result?.email ?? value;
@@ -188,6 +195,7 @@ export default function AgentesCreateForm(props) {
               email,
               telefono: value,
               direccion,
+              password,
             };
             const result = onChange(modelFields);
             value = result?.telefono ?? value;
@@ -215,6 +223,7 @@ export default function AgentesCreateForm(props) {
               email,
               telefono,
               direccion: value,
+              password,
             };
             const result = onChange(modelFields);
             value = result?.direccion ?? value;
@@ -228,6 +237,34 @@ export default function AgentesCreateForm(props) {
         errorMessage={errors.direccion?.errorMessage}
         hasError={errors.direccion?.hasError}
         {...getOverrideProps(overrides, "direccion")}
+      ></TextField>
+      <TextField
+        label="Password"
+        isRequired={false}
+        isReadOnly={false}
+        value={password}
+        onChange={(e) => {
+          let { value } = e.target;
+          if (onChange) {
+            const modelFields = {
+              nombre,
+              email,
+              telefono,
+              direccion,
+              password: value,
+            };
+            const result = onChange(modelFields);
+            value = result?.password ?? value;
+          }
+          if (errors.password?.hasError) {
+            runValidationTasks("password", value);
+          }
+          setPassword(value);
+        }}
+        onBlur={() => runValidationTasks("password", password)}
+        errorMessage={errors.password?.errorMessage}
+        hasError={errors.password?.hasError}
+        {...getOverrideProps(overrides, "password")}
       ></TextField>
       <Flex
         justifyContent="space-between"

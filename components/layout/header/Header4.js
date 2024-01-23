@@ -1,6 +1,10 @@
 import Link from "next/link"
 import Menu from "../Menu"
 import MobileMenu from "../MobileMenu"
+import LoginModal from "../LoginModal"
+
+import RegisterModal from "../RegisterModal"
+import Layout from "../Layout"
 export default function Header4({ scroll, isMobileMenu, handleMobileMenu }) {
     return (
         <>

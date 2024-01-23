@@ -43,6 +43,7 @@ type Agentes @model @auth(rules: [{allow: public}]) {
   identificacion: Tipoid
   Propiedads: [Propiedad] @hasMany(indexName: "byAgentes", fields: ["id"])
   Compradors: [Comprador] @hasMany(indexName: "byAgentes", fields: ["id"])
+  password: String
 }
 
 type Propiedad @model @auth(rules: [{allow: public}]) {
@@ -74,4 +75,6 @@ type Comprador @model @auth(rules: [{allow: public}]) {
   agentesID: ID! @index(name: "byAgentes")
   Vendedor: Agentes @belongsTo(fields: ["agentesID"])
   apartaments: [Apartament] @manyToMany(relationName: "ApartamentComprador")
+  password: String!
 }
+ 
