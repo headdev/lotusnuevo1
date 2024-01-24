@@ -1,9 +1,8 @@
 import Preloader from "@/components/elements/Preloader";
 import { useEffect, useState } from "react";
 const Amplify = require('aws-amplify').Amplify;
-const config = require('../src/aws-exports');
+const config = require('../src/configuracion');
 Amplify.configure({ ...config, ssr: true });
-
 
 
 
