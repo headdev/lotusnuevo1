@@ -4,12 +4,10 @@
  * Any changes to this file will be overwritten when running amplify pull. *
  **************************************************************************/
 
-export { default as AgentesCreateForm } from "./AgentesCreateForm";
-export { default as AgentesUpdateForm } from "./AgentesUpdateForm";
-export { default as ApartamentCreateForm } from "./ApartamentCreateForm";
-export { default as ApartamentUpdateForm } from "./ApartamentUpdateForm";
-export { default as FraccionCreateForm } from "./FraccionCreateForm";
-export { default as FraccionUpdateForm } from "./FraccionUpdateForm";
-export { default as TorreCreateForm } from "./TorreCreateForm";
-export { default as TorreUpdateForm } from "./TorreUpdateForm";
+export { default as AgenteslotusCreateForm } from "./AgenteslotusCreateForm";
+export { default as AgenteslotusUpdateForm } from "./AgenteslotusUpdateForm";
+export { default as CompradorCreateForm } from "./CompradorCreateForm";
+export { default as CompradorUpdateForm } from "./CompradorUpdateForm";
+export { default as FraccionesCreateForm } from "./FraccionesCreateForm";
+export { default as FraccionesUpdateForm } from "./FraccionesUpdateForm";
 export { default as studioTheme } from "./studioTheme";

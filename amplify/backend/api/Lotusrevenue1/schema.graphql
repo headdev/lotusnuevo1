@@ -1,0 +1,76 @@
+type Fracciones @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Propiedades: [Propiedades] @manyToMany(relationName: "FraccionesPropiedades")
+  Agenteslotuses: [Agenteslotus] @manyToMany(relationName: "FraccionesAgenteslotus")
+  Compradors: [Comprador] @manyToMany(relationName: "FraccionesComprador")
+  ValorFraccion: String
+  m2Fraccion: String
+}
+
+type Agenteslotus @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Nombre: String
+  correo: AWSEmail
+  telefono: String
+  direccion: String
+  identificacion: String
+  tipoidentificaicon: Tipoidentidad
+  Propiedades: [Propiedades] @hasMany(indexName: "byAgenteslotus", fields: ["id"])
+  fraccioness: [Fracciones] @manyToMany(relationName: "FraccionesAgenteslotus")
+}
+
+enum Tipopropiedades {
+  APARTAMENTO
+  HOTEL
+  EDIFICIO
+  VILLA
+}
+
+type Propiedades @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Titulo: String
+  Latitud: Float
+  Longitud: Float
+  m2totales: String
+  PrecioUSD: String
+  PrecioMXN: String
+  Descuento: String
+  Tipopropiedad: Tipopropiedades
+  direccion: String
+  ciudad: String
+  estado: String
+  pais: String
+  Vendido: Boolean
+  untitledfield: String
+  Fechadeventa: AWSDateTime
+  agenteslotusID: ID! @index(name: "byAgenteslotus")
+  Agenteslotus: Agenteslotus @belongsTo(fields: ["agenteslotusID"])
+  Rentacorta: Boolean
+  Vivienda: Boolean
+  Fraccionado: Boolean
+  Totalfracciones: String
+  fraccioness: [Fracciones] @manyToMany(relationName: "FraccionesPropiedades")
+}
+
+enum Tipoidentidad {
+  CEDULACIUDADANIA
+  PASAPORTE
+  DNI
+  LICENCIA
+}
+
+type Comprador @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Nombre: String
+  Apellido: String
+  Tipodeidenticiacion: Tipoidentidad
+  Numerodeidentificacion: String!
+  Telefono: AWSPhone
+  Email: AWSEmail!
+  Direccionfiscal: String
+  Ciudad: String
+  Estado: String
+  Pais: String
+  Vendedor: Agenteslotus @hasOne
+  fraccioness: [Fracciones] @manyToMany(relationName: "FraccionesComprador")
+}

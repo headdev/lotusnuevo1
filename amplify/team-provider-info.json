@@ -1,0 +1,15 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-lotusrevenue1-staging-191804-authRole",
+      "UnauthRoleArn": "arn:aws:iam::268621482089:role/amplify-lotusrevenue1-staging-191804-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::268621482089:role/amplify-lotusrevenue1-staging-191804-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-lotusrevenue1-staging-191804-deployment",
+      "UnauthRoleName": "amplify-lotusrevenue1-staging-191804-unauthRole",
+      "StackName": "amplify-lotusrevenue1-staging-191804",
+      "StackId": "arn:aws:cloudformation:us-east-1:268621482089:stack/amplify-lotusrevenue1-staging-191804/4c8f2890-baed-11ee-8815-0e16b347cb43",
+      "AmplifyAppId": "d30hxni5rko8gi"
+    }
+  }
+}
