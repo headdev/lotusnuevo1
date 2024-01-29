@@ -80,9 +80,7 @@
     width: 100%;
     height: 100%;
   }
-  .flat-property-grid-1.flat-featured .box {
-    width: calc(100% - 30px);
-  }
+  
   .flat-property-grid-1.flat-featured .box .image-group .swiper-slide img {
     width: 100%;
   }
@@ -151,6 +149,7 @@
     padding: 80px 0;
   }
   .flat-agents .heading-section {
+    font-family: "ubuntu", sans-serif;
     padding: 0;
   }
   .flat-property-list1 .category-filter .box-1 {

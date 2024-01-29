@@ -1,11 +1,13 @@
+import React, { useState } from 'react';
 import Link from "next/link"
 import Menu from "../Menu"
 import MobileMenu from "../MobileMenu"
-import LoginModal from "../LoginModal"
+import LoginModal from '../LoginModal';
 
 import RegisterModal from "../RegisterModal"
 import Layout from "../Layout"
-export default function Header4({ scroll, isMobileMenu, handleMobileMenu }) {
+export default function Header4({ scroll, isMobileMenu, handleMobileMenu, SignIn, LoginModal, RegisterModal}) {
+
     return (
         <>
             <header id="header" className={`main-header header header-fixed ${scroll ? "is-fixed is-small" : ""}`}>
@@ -40,7 +42,7 @@ export default function Header4({ scroll, isMobileMenu, handleMobileMenu }) {
                                                 </li>
                                                 <li className><Link href="#" data-toggle="modal" data-target="#popup_bid2">Register</Link></li>
                                                 <li><span>/</span></li>
-                                                <li className><Link href="#" data-toggle="modal" data-target="#popup_bid"> Login</Link></li>
+                                                <li className><Link href="#"  data-toggle="modal" data-target="#popup_bid"> Login </Link></li>
                                             </ul>
                                         </div>
                                         <div className="flat-bt-top sc-btn-top">

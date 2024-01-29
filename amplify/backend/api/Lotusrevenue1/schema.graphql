@@ -74,3 +74,4 @@ type Comprador @model @auth(rules: [{allow: public}]) {
   Vendedor: Agenteslotus @hasOne
   fraccioness: [Fracciones] @manyToMany(relationName: "FraccionesComprador")
 }
+ 

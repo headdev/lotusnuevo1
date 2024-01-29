@@ -1,15 +1,21 @@
 {
   "staging": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-lotusrevenue1-staging-191804-authRole",
-      "UnauthRoleArn": "arn:aws:iam::268621482089:role/amplify-lotusrevenue1-staging-191804-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::268621482089:role/amplify-lotusrevenue1-staging-191804-authRole",
-      "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-lotusrevenue1-staging-191804-deployment",
-      "UnauthRoleName": "amplify-lotusrevenue1-staging-191804-unauthRole",
-      "StackName": "amplify-lotusrevenue1-staging-191804",
-      "StackId": "arn:aws:cloudformation:us-east-1:268621482089:stack/amplify-lotusrevenue1-staging-191804/4c8f2890-baed-11ee-8815-0e16b347cb43",
-      "AmplifyAppId": "d30hxni5rko8gi"
+      "AuthRoleName": "amplify-lotus-staging-201101-authRole",
+      "UnauthRoleArn": "arn:aws:iam::268621482089:role/amplify-lotus-staging-201101-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::268621482089:role/amplify-lotus-staging-201101-authRole",
+      "Region": "us-west-1",
+      "DeploymentBucketName": "amplify-lotus-staging-201101-deployment",
+      "UnauthRoleName": "amplify-lotus-staging-201101-unauthRole",
+      "StackName": "amplify-lotus-staging-201101",
+      "StackId": "arn:aws:cloudformation:us-west-1:268621482089:stack/amplify-lotus-staging-201101/06faca50-bc87-11ee-ba3b-0681c5f94729",
+      "AmplifyAppId": "d3vt9mjfkrmn9b"
+    },
+    "categories": {
+      "auth": {
+        "lotus2fd1dead": {},
+        "Lotus": {}
+      }
     }
   }
 }

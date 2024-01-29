@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import BackToTop from '../elements/BackToTop'
 import Breadcrumb from './Breadcrumb'
 import LoginModal from "./LoginModal"
+import SignIn from "../SignIn"
 import PageHead from './PageHead'
 import RegisterModal from "./RegisterModal"
 import Footer1 from './footer/Footer1'
@@ -54,9 +55,7 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
             <div id="wrapper">
                 <div id="pagee" className="clearfix">
 
-                    {!headerStyle && <Header1 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handleLogin={handleLogin} handleRegister={handleRegister} />}
-                    {headerStyle == 1 ? <Header1 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handleLogin={handleLogin} handleRegister={handleRegister} /> : null}
-                    {headerStyle == 2 ? <Header2 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handleLogin={handleLogin} handleRegister={handleRegister} /> : null}
+                   
                     {headerStyle == 3 ? <Header3 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handleLogin={handleLogin} handleRegister={handleRegister} /> : null}
                     {headerStyle == 4 ? <Header4 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handleLogin={handleLogin} handleRegister={handleRegister} /> : null}
                     {headerStyle == 5 ? <Header5 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handleLogin={handleLogin} handleRegister={handleRegister} /> : null}

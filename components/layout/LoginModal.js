@@ -1,3 +1,20 @@
+// Use ES6 imports for consistency
+import Amplify from 'aws-amplify';
+import awsconfig from '../../src/aws-exports'; // Assuming this is the correct path
+import config from '../../src/configuracion'; // This should be your specific configuration overrides if needed
+import { CognitoUser, CognitoUserPool } from 'amazon-cognito-identity-js';
+import { Auth } from 'aws-amplify';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
+
+Amplify.configure({
+  ...awsconfig,
+  ...config, // Assuming you want to spread your custom configurations here
+});
+
+
+
 
 export default function LoginModal({ handleLogin, isLogin }) {
     return (

@@ -44,12 +44,12 @@ export default function FlatFindNeighborhood2() {
                                 <Swiper {...swiperOptions}>
                                     <SwiperSlide>
                                         <div className="box">
-                                            <div className="images">
+                                            <div className="alainimagenescirculo">
                                                 <img src="/assets/images/img-box/tulum.jpg" alt="images" />
                                                 <Link href="/properties-map-v1" className="icon-plus"><img src="/assets/images/icon/plus.svg" alt="images" /></Link>
                                             </div>
                                             <div className="content">
-                                                <h3 className="link-style-3"><Link href="/properties-map-v1">Tulum</Link></h3>
+                                                <h3 className="link-style-3"><Link href="/properties-map-v1">Tusslum</Link></h3>
                                                 <p className="text-color-1">1570 listing</p>
                                             </div>
                                         </div>

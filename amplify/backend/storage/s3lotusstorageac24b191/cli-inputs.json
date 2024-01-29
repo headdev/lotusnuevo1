@@ -1,0 +1,12 @@
+{
+  "resourceName": "s3lotusstorageac24b191",
+  "bucketName": "lotus-storage-ac24b191",
+  "policyUUID": "0c003c78",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "READ"
+  ]
+}
